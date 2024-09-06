@@ -11,9 +11,9 @@ function SideBar() {
 
     return (
         <>
-            <div className={`${isOpenSidebar ? "hidden" : " "} " w-40 bg-gray-400 fixed h-full top-0 left-0 z-50"`}>
+            <div className={`${isOpenSidebar ? "transition-transform translate-x-0  duration-500" : "transition-transform -translate-x-40  duration-500 "} " w-40 fixed h-full top-0 left-0 bg-gray-200 z-50"`}>
                 <div className='flex justify-center cursor-pointer bg-orange-400 py-2' onClick={closeSidebar}>
-                    <GiShuriken />
+                    <GiShuriken className='inactive' />
                 </div>
                 <div className='flex pb-4 justify-center py-5'>
                     <GiAbstract119 size={50} color='orange' />
